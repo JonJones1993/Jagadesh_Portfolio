@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagadesh - Portfolio</title>
+    <style>
+        /* Add your custom CSS styles here */
+        /* Add your custom CSS styles here */
+        /* Add your custom CSS styles here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            color: #1c1c1c;
+        }
+
+        /* Add animation for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        main {
+            padding: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            color: #1c1c1c;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        th:nth-child(1),
+        th:nth-child(2),
+        th:nth-child(3),
+        th:nth-child(4),
+        th:nth-child(5),
+        td:nth-child(1),
+        td:nth-child(2),
+        td:nth-child(3),
+        td:nth-child(4),
+        td:nth-child(5) {
+            font-weight: bold;
+            color: #000;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        ul li:before {
+            content: "✔";
+            font-size: 14px;
+            margin-right: 10px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+            color: #1c1c1c;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .page-section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+            animation: fadeIn 1s ease;
+        }
+
+        /* Add media query for responsiveness */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+        }
+
+
+
+        /* ... (rest of the CSS remains the same) ... */
+        .page-section {
+            display: none;
+        }
+
+        /* Show the selected page section */
+        .active {
+            display: block;
+            /* Apply animation */
+            animation: fadeIn 1s ease;
+        }
+
+        /* Add your custom CSS styles here */
+
+        /* ... (rest of the CSS remains the same) ... */
+
+        /* Style the dropdown */
+        select {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            color: #333;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #fff;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 200px;
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+        /* Style the dropdown arrow */
+        select::after {
+            content: '▼';
+            font-size: 16px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        /* On hover, style the dropdown arrow */
+        select:hover::after {
+            color: #555;
+        }
+
+        /* On focus, style the dropdown */
+        select:focus {
+            outline: none;
+            border-color: #555;
+            box-shadow: 0 0 5px rgba(85, 85, 85, 0.3);
+        }
+
+        /* ... (rest of the CSS remains the same) ... */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jagadesh</h1>
+        <!-- Dropdown menu -->
+        <div>
+            <select id="pageSelection">
+                <option value="" disabled selected hidden>Choose a page</option>
+                <option value="home">Home</option>
+                <option value="about">About</option>
+                <option value="contact">Contact</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page-section active">
+            <h3>JAGADESH WARAN.M</h3>
+            <p>+918148981113<br>+919894181616<br>Jagadeshjo33@gmail.com</p>
+
+            <h2>Objective Statement</h2>
+            <ul>
+                <li>To secure a challenging position in reputed organizations to acquire knowledge and skills.</li>
+                <li>To make use of my interpersonal skills to achieve goals of the company that focuses on customer
+                    satisfaction.</li>
+            </ul>
+
+            <h2>Professional Summary</h2>
+            <ul>
+                <li>Having 11+ Months of experience in Automation and Regression testing as an Associate Test Engineer
+                    in
+                    BFSI Domain.</li>
+                <li>Certified Software Test Engineer.</li>
+                <li>Certified as Tester at foundation level by International Software Testing Qualified Board (ISTQB).
+                </li>
+                <li>Having good knowledge in Selenium Web Driver Automation.</li>
+                <li>Have experience in creating Behavior Driven Development Framework from scratch with Cucumber JS.
+                </li>
+                <li>Have experience in creating BDD framework using JavaScript with Selenium.</li>
+                <li>Good knowledge in Core Java.</li>
+                <li>Good knowledge in JavaScript.</li>
+                <li>Have good knowledge in Testing and Development Life Cycle (SDLC & STLC).</li>
+                <li>Good knowledge in Agile Methodology.</li>
+                <li>Having good communication skills, collaboration with proficiency at grasping new technical concepts
+                    quickly and utilize the same in a productive manner.</li>
+            </ul>
+
+            <h2>Academic Details:</h2>
+            <table>
+                <tr>
+                    <th>QUALIFICATION</th>
+                    <th>INSTITUTION</th>
+                    <th>UNIVERSITY</th>
+                    <th>YEAR</th>
+                    <th>PERCENTAGE</th>
+                </tr>
+                <tr>
+                    <td>M.Phil (G)</td>
+                    <td>Patrician College of Art and Science</td>
+                    <td>Madras University</td>
+                    <td>2018-2020</td>
+                    <td>71%</td>
+                </tr>
+                <tr>
+                    <td>M.com (G)</td>
+                    <td>Patrician College of Art and Science</td>
+                    <td>Madras University</td>
+                    <td>2015-2017</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>B.com (c.s)</td>
+                    <td>Guru Nanak College of Art and Science</td>
+                    <td>Madras University</td>
+                    <td>2012-2015</td>
+                    <td>59%</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>C.D Nayagam Higher Secondary school</td>
+                    <td>State Board</td>
+                    <td>2012</td>
+                    <td>54%</td>
+                </tr>
+                <tr>
+                    <td>SSLC</td>
+                    <td>P.C.K.G Higher Secondary School</td>
+                    <td>State Board</td>
+                    <td>2010</td>
+                    <td>44%</td>
+                </tr>
+            </table>
+
+            <h2>Certification Summary</h2>
+            <ul>
+                <li>Java with Selenium Testing (Green Technology)</li>
+                <li>ISTQB - Foundation level</li>
+            </ul>
+
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Automation Testing Tool - Experience with Selenium Web Driver, TestNG, Terra, and Playwright
+                    automation
+                    testing tools.</li>
+                <li>Automation Framework - Experience with BDD Cucumber automation framework.</li>
+                <li>Program Language - Proficiency in Core Java and JavaScript programming languages.</li>
+                <li>Manual Testing - Experience with SDLC, STLC, functional testing, and non-functional testing.</li>
+                <li>Repository - ALM git, Github.</li>
+                <li>Open-source automation server - Jenkins.</li>
+                <li>QA Reporting Tool - Experience with JIRA QA reporting tool.</li>
+            </ul>
+
+            <h2>Professional Experience</h2>
+            <p>Currently working as an Automation Test Engineer at Tristha Global Pvt Ltd, Chennai from July 2022 –
+                Present.
+            </p>
+
+            <h2>Experience Summary</h2>
+            <table>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Designation</th>
+                    <th>Period</th>
+                </tr>
+                <tr>
+                    <td>Tristha Global Pvt Ltd</td>
+                    <td>Associate Test Engineer</td>
+                    <td>04/07/2022 till At Present</td>
+                </tr>
+            </table>
+
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Project:</strong> Oracle Banking Origination - Redwood Environment<br>
+                    <strong>Role:</strong> Automation Test Engineer<br>
+                    <strong>Tools:</strong> Visual Studio Code and Selenium BDD Cucumber Framework with JavaScript<br>
+                    <strong>Duration:</strong> Mar 1, 2023 - May 31, 2023
+                </li>
+                <li>
+                    <strong>Project:</strong> Oracle Banking Origination<br>
+                    <strong>Role:</strong> Automation Test Engineer<br>
+                    <strong>Tools:</strong> Visual Studio Code and Selenium BDD Cucumber Framework with JavaScript<br>
+                    <strong>Duration:</strong> Aug 1, 2022 - Feb 28, 2023
+                </li>
+            </ul>
+
+            <h2>Responsibilities</h2>
+            <ul>
+                <li>Knowledge about OBO Environment Automating end to end script. Developing Test scenario, Test case
+                    and
+                    Test Data by Exploratory Testing.</li>
+                <li>Executing Test case to test the application functionality against the requirements manually.</li>
+                <li>Supported to prepare Regression Test Pack.</li>
+                <li>Escalating the issues while automating the script with the manual team and client.</li>
+                <li>Defect analysis and reporting Bugs on Jira.</li>
+                <li>Having End to End knowledge about the requirement.</li>
+                <li>Analyzing and Identifying the Test Scenarios that need to be automated.</li>
+                <li>Prepared feature Scenarios and Automation scripts in Selenium.</li>
+                <li>Executed the test scripts with BDD Cucumber.</li>
+                <li>Analyzing Defect and Reporting.</li>
+            </ul>
+
+            <h2>Personal Strengths</h2>
+            <ul>
+                <li>I can easily communicate with everyone.</li>
+                <li>I am flexible with everyone.</li>
+                <li>I have a good leadership quality.</li>
+                <li>I am possessive in my work.</li>
+                <li>Teamwork.</li>
+                <li>Self-management.</li>
+            </ul>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-section">
+            <h2>About</h2>
+            <h3>Contact Information</h3>
+            <p>Email: Jagadeshjo33@gmail.com</p>
+            <p>Phone: +918148981113, +919894181616</p>
+
+            <h3>Education Details</h3>
+            <table>
+                <tr>
+                    <th>QUALIFICATION</th>
+                    <th>INSTITUTION</th>
+                    <th>UNIVERSITY</th>
+                    <th>YEAR</th>
+                    <th>PERCENTAGE</th>
+                </tr>
+                <tr>
+                    <td>M.Phil (G)</td>
+                    <td>Patrician College of Art and Science</td>
+                    <td>Madras University</td>
+                    <td>2018-2020</td>
+                    <td>71%</td>
+                </tr>
+                <tr>
+                    <td>M.com (G)</td>
+                    <td>Patrician College of Art and Science</td>
+                    <td>Madras University</td>
+                    <td>2015-2017</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>B.com (c.s)</td>
+                    <td>Guru Nanak College of Art and Science</td>
+                    <td>Madras University</td>
+                    <td>2012-2015</td>
+                    <td>59%</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>C.D Nayagam Higher Secondary school</td>
+                    <td>State Board</td>
+                    <td>2012</td>
+                    <td>54%</td>
+                </tr>
+                <tr>
+                    <td>SSLC</td>
+                    <td>P.C.K.G Higher Secondary School</td>
+                    <td>State Board</td>
+                    <td>2010</td>
+                    <td>44%</td>
+                </tr>
+            </table>
+
+            <h3>About Me</h3>
+            <p>
+                Hi, I'm Jagadesh, a passionate and dedicated Automation Test Engineer with 11+ months of experience in
+                the BFSI
+                domain. I hold certifications as a Software Test Engineer and at the foundation level by the
+                International
+                Software Testing Qualifications Board (ISTQB).
+            </p>
+            <p>
+                Throughout my career, I have gained expertise in Selenium Web Driver Automation, BDD Cucumber automation
+                framework with JavaScript, and Core Java. I am proficient in manual testing, SDLC, STLC, functional
+                testing, and
+                non-functional testing.
+            </p>
+            <p>
+                I have a proven track record of working collaboratively with teams to deliver high-quality results and
+                meeting
+                customer satisfaction goals. My strong communication skills and ability to quickly grasp new technical
+                concepts
+                have been valuable assets in my professional journey.
+            </p>
+            <p>
+                I am passionate about software testing and always eager to learn and enhance my skills in the
+                ever-evolving field
+                of automation testing. My dedication and leadership qualities enable me to effectively contribute to the
+                success
+                of challenging projects.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <h2>Contact</h2>
+            <p>
+                Feel free to get in touch with me through email or social media.
+            </p>
+            <p>Email: Jagadeshjo33@gmail.com</p>
+            <p>Phone: +918148981113, +919894181616</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jagadesh">linkedin.com/in/jagadesh</a></p>
+        </section>
+
+        <!-- ... (rest of the content remains the same) ... -->
+    </main>
+
+    <footer>
+        &copy; 2023 Jagadesh - Portfolio Website
+    </footer>
+
+    <script>
+        const pageSelection = document.getElementById('pageSelection');
+        const sections = document.querySelectorAll('.page-section');
+
+        // Function to show the selected section and hide others
+        function showSelectedSection() {
+            const selectedValue = pageSelection.value;
+            sections.forEach(section => {
+                if (section.id === selectedValue) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+
+        // Listen for the 'change' event on the dropdown
+        pageSelection.addEventListener('change', showSelectedSection);
+
+        // Initial call to show the default section (Home)
+        showSelectedSection();
+    </script>
+</body>
+
+</html>
